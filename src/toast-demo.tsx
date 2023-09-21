@@ -3,6 +3,7 @@ import { Toast, useToastController, useToastState } from "@tamagui/toast";
 import React from "react";
 
 import { Button, Label, Switch, XStack, YStack } from "tamagui";
+import { useCustomToast } from "./custom-toast.provider";
 /**
 
  *  IMPORTANT NOTE: if you're copy-pasting this demo into your code, make sure to add the ToastProvider and ToastViewport as well.
@@ -47,28 +48,19 @@ const CurrentToast = () => {
   );
 };
 const ToastControl = ({ native }: { native: boolean }) => {
-  const toast = useToastController();
+  const { showToast, hideToast } = useCustomToast();
 
   return (
     <XStack space="$2" justifyContent="center">
       <Button
         onPress={() => {
-          toast.show("Successfully saved!", {
-            message: "Don't worry, we've got your data.",
-            native,
-          });
+          showToast({ title: "Yara", message: "Manito" });
         }}
       >
         Show
       </Button>
 
-      <Button
-        onPress={() => {
-          toast.hide();
-        }}
-      >
-        Hide
-      </Button>
+      <Button onPress={() => hideToast()}>Hide</Button>
     </XStack>
   );
 };

@@ -7,6 +7,7 @@ import config from "./tamagui.config";
 import { DialogDemo } from "./dialog-demo";
 import { ToastDemo } from "./toast-demo";
 import { ToastProvider, ToastViewport } from "@tamagui/toast";
+import { CustomToastProvider } from "./custom-toast.provider";
 
 export const Root = () => {
   return (
@@ -21,13 +22,16 @@ export const Root = () => {
           ]
         }
       >
-        <YStack f={1} ai="center" jc="center">
-          <Button>Hello world</Button>
-        </YStack>
-        Dialog Demo
-        <DialogDemo />
-        Toast Demo
-        <ToastDemo />
+        <CustomToastProvider>
+          <YStack f={1} ai="center" jc="center">
+            <Button>Hello world</Button>
+          </YStack>
+          Dialog Demo
+          <DialogDemo />
+          Toast Demo
+          <ToastDemo />
+        </CustomToastProvider>
+
         <ToastViewport />
       </ToastProvider>
     </TamaguiProvider>
