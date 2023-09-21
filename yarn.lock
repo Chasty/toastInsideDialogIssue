@@ -1160,6 +1160,13 @@
     "@tamagui/use-controllable-state" "1.68.5"
     reforest "^0.13.0"
 
+"@tamagui/helpers-icon@1.68.5":
+  version "1.68.5"
+  resolved "https://registry.yarnpkg.com/@tamagui/helpers-icon/-/helpers-icon-1.68.5.tgz#75b83979ddfe852dd8e02576db4337cff38b2c94"
+  integrity sha512-ZZvdo39Cb6nZboplQspj7pijC1GP0zlgXl1VdBcCXlp9VVnVgQgTRECsoGXjWDx1/1pOxhggOXrvgSX/CicuHg==
+  dependencies:
+    "@tamagui/core" "1.68.5"
+
 "@tamagui/helpers-node@1.68.5":
   version "1.68.5"
   resolved "https://registry.yarnpkg.com/@tamagui/helpers-node/-/helpers-node-1.68.5.tgz#a2f0a6569a473ebe6fcfe94da1732e8040c7a7bc"
@@ -1222,6 +1229,14 @@
     "@tamagui/helpers-tamagui" "1.68.5"
     "@tamagui/text" "1.68.5"
     "@tamagui/web" "1.68.5"
+
+"@tamagui/lucide-icons@^1.68.5":
+  version "1.68.5"
+  resolved "https://registry.yarnpkg.com/@tamagui/lucide-icons/-/lucide-icons-1.68.5.tgz#bd60a987bffa15a33775b7970bf510c219de90d8"
+  integrity sha512-NJWZUYspepBqyeViIj2tXeZI6pHfQTWGrPx+V4dUvxfOVNWEKGuZkUnjMVU9mom/bjVLasliAEx8Dg6/pjOHzA==
+  dependencies:
+    "@tamagui/core" "1.68.5"
+    "@tamagui/helpers-icon" "1.68.5"
 
 "@tamagui/normalize-css-color@1.68.5":
   version "1.68.5"
@@ -1545,6 +1560,23 @@
   version "1.68.5"
   resolved "https://registry.yarnpkg.com/@tamagui/timer/-/timer-1.68.5.tgz#f423c3c5d6fea0c9b863f89b7ea7cb3b4cea91c3"
   integrity sha512-NygpTr84MTMGMLnsccL5JbXovvK9G/t9zxDfJhCyxD36KjIE5OWfbsgBROx5gbhVenJ43rmmMXFwYUkdyri84g==
+
+"@tamagui/toast@^1.68.5":
+  version "1.68.5"
+  resolved "https://registry.yarnpkg.com/@tamagui/toast/-/toast-1.68.5.tgz#7701c307830a9883575d07f695092ee50de80fa1"
+  integrity sha512-HaZdfwIC0tqH0H9+tpNmsji+NWfHQJltC3v4KP8MVWxeeY8t6n+YG2lVezK0pstSv9KFW0hDdKO3mBBZ1EZqSA==
+  dependencies:
+    "@tamagui/animate-presence" "1.68.5"
+    "@tamagui/compose-refs" "1.68.5"
+    "@tamagui/core" "1.68.5"
+    "@tamagui/create-context" "1.68.5"
+    "@tamagui/dismissable" "1.68.5"
+    "@tamagui/polyfill-dev" "1.68.5"
+    "@tamagui/portal" "1.68.5"
+    "@tamagui/stacks" "1.68.5"
+    "@tamagui/text" "1.68.5"
+    "@tamagui/use-controllable-state" "1.68.5"
+    "@tamagui/visually-hidden" "1.68.5"
 
 "@tamagui/toggle-group@1.68.5":
   version "1.68.5"
